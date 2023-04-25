@@ -1,7 +1,7 @@
 .App {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 60px;
   justify-content: space-evenly;
 }
 body {

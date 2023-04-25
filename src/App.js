@@ -1,43 +1,88 @@
+import React from "react";
+import Cards from "./components/Cards";
 import './App.css';
-import Usercard from './Components/Usercard';
 
-function App() {
+export default function App() {
 
-  function showName(name){
-    alert(`${name}`)
+  const card1Style={
+    background:'black'
   }
-
-  return (
-    <div className="App">
-    <Usercard 
-    src = "https://cdn2.vectorstock.com/i/1000x1000/13/76/icon-of-user-avatar-for-web-site-or-mobile-vector-4031376.jpg"
-    designation = "UI/UX Designer"
-    name = "Aman Gupta"
-    jobDescription = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure voluptatem laborum ut."
-    buttonText = "See More"
-    displayName = {()=>showName("Aman Gupta")}
+  const card2Style={
+    background:'black'
+  }
+  const card3Style={
+    background:'black'
+  }
+  const card4Style={
+    background:'black'
+  }
+  const card5Style={
+    background:'black'
+  }
+  const productDetails1 = {
+    productId: "1",
+    productPic:
+      "https://dzp3g6fzlnblr.cloudfront.net/wp-content/uploads/2022/08/Hesh-ANC_True-Black_S6HHW-N740_Hero_v001.jpg",
+    productName: "Headphone",
+    Brand: "Boat",
+    productDescription:
+      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, rem?",
+    price: "40$",
+    rating: "4.7",
     
-   />
+  };
+ const  productDetails2= {
+    productId: "2",
+    productPic:
+      "https://cdn.thewirecutter.com/wp-content/media/2022/07/laptop-under-500-2048px-acer-1.jpg",
+    productName: "Laptop",
+    Brand: "HP",
+    productDescription:
+      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, rem?",
+    price: "1500$",
+    rating: "4",
+  };
+  const productDetails3 = {
+    productId: "3",
+    productPic:
+      "https://media.4rgos.it/s/Argos/9520103_R_SET?$Main768$&w=620&h=620",
+    productName: "Phone",
+    Brand: "Samsung",
+    productDescription:
+      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, rem?",
+    price: "100$",
+    rating: "4",
+    
+  }
+  const productDetails4 = {
+    productId: "4",
+    productPic:
+      "https://rukminim1.flixcart.com/image/832/832/xif0q/backpack/f/h/x/7-heavy-duty-durable-college-bag-school-bag-laptop-bag-backpack-original-imaghkyzfva7vrau.jpeg?q=70",
+    productName: "Bag",
+    Brand: "Reebok",
+    productDescription:
+      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, rem?",
+    price: "26$",
+    rating: "4",
+  }
+  const productDetails5 = {
+    productId: "5",
+    productPic:
+      "https://5.imimg.com/data5/SELLER/Default/2021/4/XL/PT/EA/96403645/adidas-battary-wt-red-500x500.jpg",
+    productName: "Shoe",
+    Brand: "Adidas",
+    productDescription:
+      " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, rem?",
+    price: "35$",
+    rating: "4.5",
+    color:'ProductC'
+  };
 
-<Usercard 
-    src = "https://static.vecteezy.com/system/resources/previews/004/773/704/original/a-girl-s-face-with-a-beautiful-smile-a-female-avatar-for-a-website-and-social-network-vector.jpg"
-    designation = "Front-End Developer"
-    name = "Ashneer Grover"
-    jobDescription = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure voluptatem laborum ut."
-    buttonText = "See More"
-    displayName = {()=>showName("Ashneer Grover")}
-   />
-
-<Usercard 
-    src = "https://www.w3schools.com/w3images/avatar2.png"
-    designation = "Back End Developer"
-    name = "Sanjay Kumar"
-    jobDescription = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure voluptatem laborum ut."
-    buttonText = "See More"
-    displayName = {()=>showName("Sanjay Kumar")}
-   />
-    </div>
-  );
+  return <div className="App">
+    <Cards data={productDetails1} cardStyle={card1Style}/>
+    <Cards data={productDetails2} cardStyle={card2Style}/>
+    <Cards data={productDetails3} cardStyle={card3Style}/>
+    <Cards data={productDetails4} cardStyle={card4Style}/>
+    <Cards data={productDetails5} cardStyle={card5Style}/>
+  </div>;
 }
-
-export default App;

@@ -3,7 +3,7 @@ import './Name.css'
 export default function NameUpdate() {
 
     const [name, setName] = useState('');
-    const [displayName, setDisplayName] = useState(' ');
+    const [displayName, setDisplayName] = useState('***');
 
 
     

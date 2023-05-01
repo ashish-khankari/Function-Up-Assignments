@@ -1,10 +1,10 @@
 import React from 'react';
+import File from './Components/File-Selector';
 import './App.css'
-import ImageChange from './Components/ImageSlider';
 export default function App() {
   return (
     <div className='App'>
-      <ImageChange />
+      <File/>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css'
-import ImageChange from './Components/ImageSlider';
+import DogComp from './Components/FetchDogs/DogComp';
 export default function App() {
   return (
     <div className='App'>
-      <ImageChange />
+      <DogComp/>
     </div>
   );
 }

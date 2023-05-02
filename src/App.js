@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react'
 import './App.css'
-import DogComp from './Components/FetchDogs/DogComp';
+import UserCards from './Components/UserCard';
 export default function App() {
+
   return (
-    <div className='App'>
-      <DogComp/>
-    </div>
+    <>
+      <div className='App'>
+        <UserCards/>
+      </div>
+    </>
   );
 }
-
-
-

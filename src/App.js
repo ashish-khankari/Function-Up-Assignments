@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css'
-import DogComp from './Components/FetchDogs/DogComp';
+import SendOTP from './Components/OTP';
 export default function App() {
   return (
     <div className='App'>
-      <DogComp/>
+      <SendOTP />
     </div>
   );
 }

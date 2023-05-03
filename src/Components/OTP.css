@@ -1,0 +1,31 @@
+.OTP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    width: 400px;
+    margin-left: 40%;
+    border-radius: 25px;
+}
+
+.input{
+    width: 250px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 20px;
+    
+}
+
+.btn{
+    width: 120px;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 20px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}

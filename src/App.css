@@ -1,4 +1,7 @@
-body{
-    background-color: rgb(93, 150, 188);
-
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    
 }

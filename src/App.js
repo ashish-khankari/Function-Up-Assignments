@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css'
-import DogApi from './Components/Dog-Axios';
+import Header from './Components/Organism/Header';
 export default function App() {
   return (
     <div className='App'>
-      <DogApi/>
+     <Header/>
     </div>
   );
 }

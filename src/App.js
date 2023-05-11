@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css'
-import Cards from './Components/Cards';
+import Game from './Components/Game';
 export default function App() {
   return (
     <div className='App'>
-    <Cards/>
+      <Game/>
     </div>
   );
 }

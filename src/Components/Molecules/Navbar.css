@@ -15,6 +15,11 @@
     margin-right: 80px;
 }
 
+.header-list a{
+  list-style: none;
+  color: rgb(255, 255, 255);
+}
+
 .bar-icon{
     cursor: pointer;
     height: 25px;
@@ -45,7 +50,11 @@
       color: rgb(0, 0, 0);
       font-size: 20px;
     }
-
+    .header-list a{
+      list-style: none;
+      color: rgb(0, 0, 0);
+      
+    }
     
   }
   

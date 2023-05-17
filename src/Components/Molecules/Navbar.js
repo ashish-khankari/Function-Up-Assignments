@@ -4,6 +4,7 @@ import Logo from '../Atoms/Logo';
 import LoginButton from '../Atoms/Button'
 
 import { FaBars } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState(false);
     function showHamburgerMenu(){
@@ -15,12 +16,12 @@ export default function Navbar() {
             <Logo />
             <div className='hamburger-menu'>
                 <ul className={`header-list ${showMenu ? "show" : ""}`}>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact</li>
-                    <li>Services</li>
-                    <li>Support</li>
-                    <LoginButton  />
+                    <li><Link to={'/home'} >Home</Link></li>
+                    <li><Link to={'/aboutUs'}>AboutUs</Link></li>
+                    <li> <Link to={'/contact'}>Contact</Link></li>
+                    <li> <Link to={'/services'}>Services</Link></li>
+                    <li> <Link to={'/support'}>Support</Link></li>
+                     <LoginButton  />
                 </ul>
             </div>
 

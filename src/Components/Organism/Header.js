@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
-import Navbar from '../Molecules/Navbar'
 import './Header.css'
 import { Mainbutton } from '../Atoms/Button'
 export default function Header() {
 
     return (
         <div>
-            <Navbar />
+            
             <div className='main'>
-                
                 <div className='text' >
                     <h1>Be There</h1>
                     <h3>Listen to Brilliant Songs in the moment</h3>

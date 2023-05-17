@@ -16,7 +16,7 @@ export default function Navbar() {
             <Logo />
             <div className='hamburger-menu'>
                 <ul className={`header-list ${showMenu ? "show" : ""}`}>
-                    <li><Link to={'/home'} >Home</Link></li>
+                    <li><Link to={'/'} >Home</Link></li>
                     <li><Link to={'/aboutUs'}>AboutUs</Link></li>
                     <li> <Link to={'/contact'}>Contact</Link></li>
                     <li> <Link to={'/services'}>Services</Link></li>
